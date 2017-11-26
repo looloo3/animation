@@ -1,0 +1,210 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Nosifer|Permanent+Marker|Spectral+SC');
+</style>
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+
+
+}
+
+div{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 135px;
+}
+
+.move{
+    font-family:'Permanent Marker', cursive;
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    -webkit-transition: width 2s, height 4s;
+    transition: width 2s, height 4s;
+}
+
+.move:hover{
+  width: 300px;
+  height: 350px;
+  background-color: teal;
+  transition: 3s;
+  transition: width 2s, height 4s;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-out 1s;
+
+
+}
+
+.twirl{
+  /*margin-left: 420px;*/
+  font-size: 15px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+  font-family: 'Spectral SC', serif;
+}
+
+.twirl:hover{
+      width: 300px;
+      height: 300px;
+      -webkit-transform: rotate(360deg); /* Safari */
+      transform: rotate(360deg);
+      font-size: 55px;
+      transition: 4s;
+      transition-timing-function: ease-in-out;
+}
+
+.bounce{
+  /*transform:translate(79px, -45px);
+  animation:bounce 7s infinite;*/
+  -webkit-transition: width 2s, height 4s; /* Safari */
+    transition: width 2s, height 4s;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-right: 160px;
+  width: 100px;
+    height: 100px;
+
+}
+
+.bounce:hover{
+  -webkit-transition: width 2s, height 4s; /* Safari */
+    transition: width 2s, height 4s;
+    width: 300px;
+    height: 400px;
+    background-color: indigo;
+}
+
+@keyframes bounce{
+  50% {font-size:20px;}
+}
+
+.bob{
+  font-family: 'Permanent Marker', cursive;
+  margin-left: 350px;
+  width: 100px;
+  height: 100px;
+  background-size: auto;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+  transition-property: all;
+}
+
+.bob:hover {
+  background-color: grey;
+  width: 350px;
+}
+
+.jump {
+
+  width:150px;
+  height:300px;
+  background-image: url(../images/jump.jpg);
+  animation: play .8s steps(6) infinite;
+
+}
+
+@keyframes play {
+  from{background-position: 0px;}
+  to {background-position: -1062px;}
+
+}
+
+
+ul {
+  margin: 0;
+  list-style: none;
+  font-size: 75px;
+  transform-style: preserve-3d;
+  animation: three-dimensions-circle 30s linear infinite;
+}
+
+li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Nosifer', cursive;
+}
+
+li:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(30deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(60deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(90deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(120deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(150deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(7) {
+  transform: translate(-50%, -50%) rotate(180deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(8) {
+  transform: translate(-50%, -50%) rotate(210deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(9) {
+  transform: translate(-50%, -50%) rotate(240deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(10) {
+  transform: translate(-50%, -50%) rotate(270deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(11) {
+  transform: translate(-50%, -50%) rotate(300deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(12) {
+  transform: translate(-50%, -50%) rotate(330deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(13) {
+  transform: translate(-50%, -50%) rotate(330deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(14) {
+  transform: translate(-50%, -50%) rotate(330deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(15) {
+  transform: translate(-50%, -50%) rotate(330deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(16) {
+  transform: translate(-50%, -50%) rotate(330deg) translateY(-260px) rotateX(90deg);
+}
+
+li:nth-child(17) {
+  transform: translate(-50%, -50%) rotate(330deg) translateY(-260px) rotateX(90deg);
+}
+
+@keyframes three-dimensions-circle {
+  0% {
+    transform: rotateX(-100deg) rotate(0);
+  }
+  100% {
+    transform: rotateX(-100deg) rotate(-360deg);
+  }
+}
